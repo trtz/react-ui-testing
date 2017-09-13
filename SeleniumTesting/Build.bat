@@ -1,7 +1,7 @@
 SET OutputDir=%~dp0Output
 SET Configuration=Release
 SET ILMergeExe=%~dp0Assemblies\ILMerge\ILMerge.exe
-SET MSBuildExe=%windir%\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe
+SET MSBuildExe="C:\Program Files (x86)\MSBuild\14.0\Bin\MsBuild.exe"
 SET NpmExe=npm
 
 pushd %~dp0
@@ -22,7 +22,8 @@ pushd SeleniumTesting\bin\%Configuration%
  Humanizer.resources.dll^
  ru\Humanizer.resources.dll^
  MoreLinq.dll^
- Newtonsoft.Json.dll
+ Newtonsoft.Json.dll^
+ Kontur.RetryableAssertions.dll
 
 popd
 

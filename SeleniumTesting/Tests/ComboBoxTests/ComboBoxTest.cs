@@ -21,7 +21,7 @@ namespace SKBKontur.SeleniumTesting.Tests.ComboBoxTests
             page.SimpleComboBox.InputText("Item 1");
             page.SimpleComboBox.SelectByIndex(0);
             throw new AssertionException("Неоднозначность");
-            //page.SimpleComboBox.ExpectTo().Text.EqualTo("Item 1");
+            //page.SimpleComboBox.ExpectTo().TextObsolete.EqualTo("Item 1");
         }
 
         [Test]
@@ -30,7 +30,7 @@ namespace SKBKontur.SeleniumTesting.Tests.ComboBoxTests
             page.SimpleComboBox.InputText("Item");
             page.SimpleComboBox.SelectByIndex(5);
             throw new AssertionException("Неоднозначность");
-            //page.SimpleComboBox.ExpectTo().Text.EqualTo("Item 6");
+            //page.SimpleComboBox.ExpectTo().TextObsolete.EqualTo("Item 6");
         }
 
         [Test]
